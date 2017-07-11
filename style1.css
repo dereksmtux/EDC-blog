@@ -21,6 +21,9 @@ div.featuredItems {
   float: left;
   color: white;
 }
+img.featuredItems {
+  width: 50%;
+}
 p.main {
 
 }
@@ -28,4 +31,18 @@ p.main {
   float: left;
   width: 30%;
   padding: 10px;
+}
+table.menu {
+  align-items: center;
+  table-layout: fixed;
+  width: 100%
+}
+td.button {
+  font-size: 30px;
+  width: 33%;
+  text-align: center;
+ background-color: rgba(100, 100, 100, 0.6);
+}
+td.button:hover {
+  background-color: rgba(100, 100, 100, 1);
 }

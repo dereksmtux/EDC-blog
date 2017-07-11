@@ -8,8 +8,26 @@
 <body>
 	<h1>Welcome to the pocket stop!</h1>
 	<h2>The best place for reviews and more</h2>
-	<div class="featuredItems">
+	<table class="menu">
+		<tr>
+			<td class="button">
+				Home
+			</td>
+			<td class="button">
+				Shop
+			</td>
+			<td class="button">
+				Reviews
+			</td>
+		</tr>
+	</table>
+	<div class="featuredItems" ng-app = "featured" ng-controller="featuredController">
 		<h3>Featured Items</h3>
+
+			<div ng-repeat="x in items">
+				<img class="featuredItems" ng-src="{{x.image}}"/>
+				<p>{{x.name + " " + x.price + "$"}}</p>
+			</div>
 	</div>
 	<div class="main">
 		<img id="sample" src="edc-sample.jpg"/>
@@ -22,6 +40,6 @@
 			We started pocket stop to review and provide a store front for EDC items.
 		</p>
 	</div>
-
+<script src="main.js"></script>
 </body>
 </html>
