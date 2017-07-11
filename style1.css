@@ -1,6 +1,6 @@
 body {
   background-image: url(wood-bg.jpg);
-  background-repeat: no-repeat;
+  background-repeat:repeat-x;
   background-size: 100%;
 }
 h1, h2 {
@@ -15,6 +15,7 @@ div.main {
   color: white;
   font-size: 22px;
   padding: 5px;
+  background-color: rgba(100, 100, 100, 0.5);
 }
 div.featuredItems {
   width: 17%;
@@ -38,10 +39,11 @@ table.menu {
   width: 100%
 }
 td.button {
+  color: white;
   font-size: 30px;
   width: 33%;
   text-align: center;
- background-color: rgba(100, 100, 100, 0.6);
+ background-color: rgba(10, 10, 10, 0.6);
 }
 td.button:hover {
   background-color: rgba(100, 100, 100, 1);
