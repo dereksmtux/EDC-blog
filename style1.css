@@ -3,6 +3,10 @@ body {
   background-repeat:repeat-x;
   background-size: 100%;
 }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 h1, h2 {
   text-align: center;
   color: #fff;
@@ -18,12 +22,13 @@ div.main {
   background-color: rgba(100, 100, 100, 0.5);
 }
 div.featuredItems {
-  width: 17%;
+  width: 12%;
   float: left;
   color: white;
+  background-color: rgba(100, 100, 100, 0.5);
 }
 img.featuredItems {
-  width: 50%;
+  width: 90%;
 }
 p.main {
 
