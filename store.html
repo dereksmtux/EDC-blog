@@ -28,10 +28,20 @@
 				<p>{{x.name + " " + x.price + "$"}}</p>
 			</div>
 	</div>
-	<div class="main">
+	<div class="main" id="storePage" ng-app = "store" ng-controller="storeController">
+		<div class = "store" ng-repeat = "s in storeItems">
+			<p class="image"> <img class="store" align="center" ng-src="{{s.image}}"/></p>
+			<p class="store" >
+				{{s.name}} <br />
+				{{s.price + "$"}} <br />
+				<p class="desc">{{s.description}}</p>
+			</p>
+			<p class="store">
 
+			</p>
+		</div>
 	</div>
 <script src="main.js"></script>
-<script src="store.js"></script>
+
 </body>
 </html>

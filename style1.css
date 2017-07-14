@@ -30,6 +30,29 @@ div.featuredItems {
 img.featuredItems {
   width: 90%;
 }
+div.store {
+  width: 35%;
+  background-color: rgba(50, 50, 50, 0.45);
+  margin-left: auto;
+  margin-right: auto;
+
+}
+img.store {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+}
+p.image {
+  text-align: center;
+}
+p.store {
+  text-align: center;
+}
+p.desc {
+  text-align: center;
+  font-size: 18px;
+}
+
 p.main {
 
 }
