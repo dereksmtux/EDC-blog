@@ -1,6 +1,6 @@
 body {
   background-image: url(wood-bg.jpg);
-  background-repeat:repeat-x;
+  background-repeat:repeat-y;
   background-size: 100%;
 }
 a {
@@ -15,6 +15,7 @@ div.main {
   width: 65%;
   margin-left: auto;
   margin-right: auto;
+  overflow: auto;
   padding: 5px;
   color: white;
   font-size: 22px;
@@ -30,12 +31,17 @@ div.featuredItems {
 img.featuredItems {
   width: 90%;
 }
-div.store {
+div.storeOdd {
   width: 35%;
+  float: left;
   background-color: rgba(50, 50, 50, 0.45);
-  margin-left: auto;
-  margin-right: auto;
-
+  margin-left: 5% ;
+}
+div.storeEven{
+  width: 35%;
+  float: right;
+  background-color: rgba(50, 50, 50, 0.45);
+  margin-right: 5%;
 }
 img.store {
   width: 100%;

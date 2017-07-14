@@ -4,6 +4,7 @@
 	<title>Welcome to the pocket stop!</title>
 	<link rel="stylesheet"  type="text/css" href='style1.css' />
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<h1>Welcome to the pocket stop!</h1>
@@ -29,7 +30,8 @@
 			</div>
 	</div>
 	<div class="main" id="storePage" ng-app = "store" ng-controller="storeController">
-		<div class = "store" ng-repeat = "s in storeItems">
+		<div class = "storeOdd" ng-repeat = "s in storeItems" ng-class-even= "storeEven">
+
 			<p class="image"> <img class="store" align="center" ng-src="{{s.image}}"/></p>
 			<p class="store" >
 				{{s.name}} <br />
