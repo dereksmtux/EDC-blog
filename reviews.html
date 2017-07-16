@@ -29,9 +29,17 @@
 				<p>{{x.name + " " + x.price + "$"}}</p>
 			</div>
 	</div>
-	<div class="main" >
+	<div class="main" id="reviewPage" ng-app = "reviews" ng-controller = "reviewsController">
+		<div class="review"  ng-repeat = 'x in reviewItems'>
+			<h3 class="review">{{x.name}}</h3>
+			
+		<p class="review">
+			{{x.description}}
+		</p>
+		</div>
 	</div>
-<script src="main.js"></script>
 
+<script src="main.js"></script>
+<script src="reviews.js"></script>
 </body>
 </html>

@@ -22,9 +22,7 @@ app.controller("storeController", function($scope){
     {name:"wallet", price: 35, image: "wallet.jpg", description: "holds money."},
     {name:"knife", price:20, image: "knife.jpg", description: "regular knife."}
   ]
-
-
-
 });
+
 
 angular.bootstrap(document.getElementById("storePage"), ['store']);
