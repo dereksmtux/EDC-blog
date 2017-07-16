@@ -1,46 +1,37 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Welcome to the pocket stop!</title>
+	<title>Welcome To The Pocket Stop!</title>
 	<link rel="stylesheet"  type="text/css" href='style1.css' />
 	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 </head>
 <body>
 	<h1>Welcome To The Pocket Stop!</h1>
-	<h2>The best place for reviews and more</h2>
+
 	<table class="menu">
 		<tr>
 			<td class="button">
-				Home
+				<a href="index.html">Home</a>
 			</td>
 			<td class="button">
-				<a href="store.html">shop</a>
+				<a href="store.html">Shop</a>
 			</td>
 			<td class="button">
-				<a href="reviews.html">Reviews</a>
+				Reviews
 			</td>
 		</tr>
 	</table>
 	<div class="featuredItems" ng-app = "featured" ng-controller="featuredController">
 		<h3>Featured Items</h3>
-
 			<div ng-repeat="x in items">
 				<img class="featuredItems" ng-src="{{x.image}}"/>
 				<p>{{x.name + " " + x.price + "$"}}</p>
 			</div>
 	</div>
-	<div class="main">
-		<img id="sample" src="edc-sample.jpg"/>
-		<p class="main">
-			What is EDC? EDC stands for everyday carry, in other words the items or tools you have on you every day. This can be knives, notebooks, pens, spinners,
-			 keychains, watches and so much more!
-		</p>
-		<h3>Why did we start pocket stop?</h3>
-		<p>
-			We started pocket stop to review and provide a store front for EDC items.
-			And to let our veiwers know about upcoming deals and sales on EDC items.
-		</p>
+	<div class="main" >
 	</div>
 <script src="main.js"></script>
+
 </body>
 </html>
