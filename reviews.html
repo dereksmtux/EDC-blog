@@ -30,9 +30,9 @@
 			</div>
 	</div>
 	<div class="main" id="reviewPage" ng-app = "reviews" ng-controller = "reviewsController">
-		<div class="review"  ng-repeat = 'x in reviewItems'>
+		<div class="review"  ng-repeat = 'x in reviewItems' >
 			<h3 class="review">{{x.name}}</h3>
-			
+			<a ng-href="{{x.link}}"><img ng-src= "{{x.image}}"  class="reviews"/></a>
 		<p class="review">
 			{{x.description}}
 		</p>
