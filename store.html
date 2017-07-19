@@ -25,7 +25,7 @@
 	<div class="featuredItems" ng-app = "featured" ng-controller="featuredController">
 		<h3>Featured Items</h3>
 			<div ng-repeat="x in items">
-				<img class="featuredItems" ng-src="{{x.image}}"/>
+				<img class="featuredItems" ng-src="{{'images/'+x.image}}"/>
 				<p>{{x.name + " " + x.price + "$"}}</p>
 			</div>
 	</div>
